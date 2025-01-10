@@ -23,6 +23,6 @@ urlpatterns = [
     path('', views.home),
     path('about/', views.about),
     path('contact/', views.contact),
-    path('myfirstapp/', include('../myfirstapp.urls'))
+    path('myfirstapp/', include('../myfirstapp.urls')),
 ]
 
