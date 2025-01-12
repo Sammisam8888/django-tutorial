@@ -1,3 +1,5 @@
 Django
 tailwind
 django-tailwind[reload]
+pillow
+django-browser-reload

@@ -1,2 +1,5 @@
 __pycache__
-.django-env
+.django-env  
+#python-virtual-environment 
+
+node_modules

@@ -1,4 +1,4 @@
-{% load static %}
+{% load static tailwind_tags %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -7,15 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
         {% block title %}
-        Default Title Name
+        {% comment %} Default Title Name {% endcomment %}
+        Homepage
         {% endblock %}
     </title>
     <link rel="stylesheet" href="{% static 'style.css' %}">
+     {% comment %} {% tailwind_css %} {% endcomment %}
 </head>
-<body>
-    <h1>Hello World</h1>
+<body class="page-body">
+    <h1 class= "page-header">Hello World</h1>
     <nav> This is navigation bar </nav>
-    {% block content %}{% endblock %} /---no default body---/
+    
+    {% comment %} /---no default body---/ {% endcomment %}
+   
 </body>
+<div class="block-content">
+    {% block content %}{% endblock %}
+</div>
 </html>
 

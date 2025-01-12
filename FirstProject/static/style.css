@@ -1,11 +1,32 @@
 body{
-    background-color: lightgreen;
-    
+    background-color: lightgoldenrodyellow;
+    text-align: center;
 }
 
 h1{
     text-align: center;
     font-size:2em; 
-    color: black;
-    
+    color: rgb(255, 209, 209);
 }
+/* 
+.block-content {
+    background-color: #dbd514; 
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    border: 1px solid #df6464;
+    border-radius: 8px;
+    color: #333;
+    font-size: 1em;
+    text-align: left;
+}
+
+.page-header{
+    background-color: lightgoldenrodyellow;
+    text-align: center;
+}
+
+.page-body{
+    background-color: lightgoldenrodyellow;
+    text-align: center;
+} */  
