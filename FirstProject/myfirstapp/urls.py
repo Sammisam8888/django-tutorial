@@ -18,8 +18,10 @@ from django.contrib import admin
 from django.urls import path, include
 from . import views
 
+app_name = 'myfirstapp'
+
 urlpatterns = [
-    path('', views.allmyfirstapp,name='all-myfirstapp'),
-    path('<int:id>/', views.chai_detail, name='chai-detail'),
+    path('', views.allmyfirstapp,name='all-chais'),
+    path('<int:chai_id>/', views.chai_detail, name='chai-detail'),
 ]
 

@@ -14,15 +14,18 @@
     <link rel="stylesheet" href="{% static 'style.css' %}">
      {% comment %} {% tailwind_css %} {% endcomment %}
 </head>
-<body class="page-body">
+
+<div class="block-content">
+    <body class="page-body">
     <h1 class= "page-header">Hello World</h1>
     <nav> This is navigation bar </nav>
     
     {% comment %} /---no default body---/ {% endcomment %}
    
 </body>
-<div class="block-content">
     {% block content %}{% endblock %}
 </div>
+
+<p>&copy; All copyright reserved. Sammisam INC</p>
 </html>
 
