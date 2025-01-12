@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'tailwind',
-    # 'django_tailwind',
+    # 'django-tailwind',
     'myfirstapp',
     'theme',
     'django_browser_reload',
@@ -50,6 +50,9 @@ TAILWIND_APP_NAME= 'theme'
 INTERNAL_IPS = [
     "127.0.0.1",
 ]
+
+TIME_ZONE = 'Asia/Kolkata'
+USE_TZ = True
 
 NPM_BIN_PATH = "/usr/bin/npm"
 
