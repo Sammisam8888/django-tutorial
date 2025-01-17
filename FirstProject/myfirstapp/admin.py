@@ -7,13 +7,14 @@ class chaireviewinline(admin.TabularInline):
 
 
 class chaiVarietyAdmin(admin.ModelAdmin):
-    list_display = ('name','type','date_added')
-    inlines = [chaireviewinline] #
-
+    list_display = ('name', 'type', 'date_added')
+    search_fields = ('name', 'type')
+    list_filter = ('type', 'date_added')
+    inlines = [chaireviewinline]
 
 class StoreAdmin(admin.ModelAdmin):
-    list_display = ('store_name','location')
-    filter_horizontal=('chai_variety',)
+    list_display = ('store_name', 'location')
+    filter_horizontal = ('chai_varieties',)  # Updated field name
 
 class chaicertificateAdmin(admin.ModelAdmin):
     list_display = ('chai','certificate_number','issue_date','valid_until')

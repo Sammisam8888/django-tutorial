@@ -27,6 +27,8 @@ urlpatterns = [
     path('contact/', views.contact),
     path('myfirstapp/', include('myfirstapp.urls')),
     path("__reload__/", include("django_browser_reload.urls")),
+    #dynamic urls
+    # path('myfirstapp/<id>/')
    
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
